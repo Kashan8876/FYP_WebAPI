@@ -1,6 +1,5 @@
 from flask import Flask , jsonify , request
 import pickle
-# import streamlit as st
 import json
 
 
@@ -74,15 +73,15 @@ def main():
     inputtest = [l2]
     
 
-    # if st.button('Predict Disease'):
+    
     result = clf.predict(inputtest)
-    # st.success(result)
+    
 
     return jsonify({'Result': list(result)})
 
     
 if __name__ == '__main__':
-	app.run(debug=True) #run app on port 8080 in debug mode
+	app.run(debug=True) 
 
 
 
