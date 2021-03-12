@@ -77,7 +77,7 @@ def main():
     result = clf.predict(inputtest)
     
 
-    return jsonify({'Result': list(result)})
+    return jsonify({'Disease': list(result)})
 
     
 if __name__ == '__main__':
